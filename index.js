@@ -22,7 +22,8 @@ function clickStart() {
   console.log("Start");
   const intervalId = setInterval(() => {
     console.log("intrerval");
-    body.style.backgroundColor = colors[randomIntegerFromInterval(0, 5)];
+    body.style.backgroundColor =
+      colors[randomIntegerFromInterval(0, colors.length - 1)];
   }, PROMT_DELAY);
   startBtn.disabled = true;
 
